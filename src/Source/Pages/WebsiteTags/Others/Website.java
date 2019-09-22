@@ -5,6 +5,7 @@ import org.jsoup.nodes.Document;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.regex.Pattern;
 
 
 public class Website {
@@ -40,17 +41,16 @@ public class Website {
 
     //todo
     private String getOnlyTags(String text) {
-        List<Character> polishChars = new ArrayList<>(Arrays.asList( 'ą', 'ę', 'ó', 'ł', 'ż', 'ź', 'ć', 'ś', 'ń',
-                                                                     'Ą', 'Ę', 'Ó', 'Ł', 'Ż', 'Ź', 'Ć', 'Ś', 'Ń'));
         StringBuilder sb = new StringBuilder(text);
         StringBuilder temp = new StringBuilder();
 
+        Pattern unicodePattern = Pattern.compile("\\w+", Pattern.UNICODE_CHARACTER_CLASS);
         for(int i=0; i<sb.length(); i++) {
-            if(((sb.charAt(i)>=65) && (sb.charAt(i)<=90) || ((sb.charAt(i)>=97) && (sb.charAt(i)<=122)) || polishChars.contains(sb.charAt(i)))) {
+            if(unicodePattern.matcher(String.valueOf(sb.charAt(i))).matches()) {
                 temp.append(sb.charAt(i));
             } else if (!temp.toString().equals("")) {   //if is 2x space or special characters side by side
-                    this.tags.add(temp.toString());
-                    temp = new StringBuilder();
+                this.tags.add(temp.toString());
+                temp = new StringBuilder();
             }
         }
         return getStringTagsFromList();
