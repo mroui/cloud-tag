@@ -24,10 +24,10 @@
             </Label>
             <Label layoutX="147.0" layoutY="203.0" prefHeight="53.0" prefWidth="507.0" text="Created clouds can be found in the Output folder" textAlignment="CENTER">
                <font>
-                  <Font name="Georgia" size="24.0" />
+                  <Font name="Georgia" size="22.0" />
                </font>
             </Label>
-            <ImageView fx:id="imageView"  fitHeight="250.0" fitWidth="250.0" layoutX="250.0" layoutY="250.0" x="20" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imageView"  fitHeight="250.0" fitWidth="250.0" layoutX="250.0" layoutY="250.0" x="20" y="50" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
             <Button id="butn" layoutX="281.0" layoutY="643.0" mnemonicParsing="false" onAction="#RepeatActionButton" prefHeight="51.0" prefWidth="238.0" stylesheets="@../../../Assets/Styles/style.css" text="Restart" />
          </children>
       </Pane>
