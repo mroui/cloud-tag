@@ -15,7 +15,7 @@
                   <Font name="Cambria" size="96.0" />
                </font>
             </Label>
-            <Label layoutX="343.0" layoutY="290.0" text="Martyna Rój" textAlignment="CENTER">
+            <Label layoutX="343.0" layoutY="290.0" text="Martyna Roj" textAlignment="CENTER">
                <font>
                   <Font name="Cambria" size="24.0" />
                </font>
