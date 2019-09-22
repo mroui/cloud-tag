@@ -1,7 +1,7 @@
 package Source.Pages.websiteTags;
 
 import Source.Interfaces.InitializeScene;
-import Source.Interfaces.LoadSceneInterface;
+import Source.Interfaces.LoadScene;
 import Source.Others.FadeLoadNextScene;
 import Source.Pages.websiteTags.Others.SaveTagsToFile;
 import Source.Pages.websiteTags.Others.Website;
@@ -18,7 +18,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 
-public class ControllerWebsiteTags extends FadeLoadNextScene implements Initializable, LoadSceneInterface, InitializeScene {
+public class ControllerWebsiteTags extends FadeLoadNextScene implements Initializable, LoadScene, InitializeScene {
 
     @FXML
     private Pane rootPane;

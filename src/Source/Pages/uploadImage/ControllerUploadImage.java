@@ -1,14 +1,16 @@
 package Source.Pages.uploadImage;
 
-
+import Source.Interfaces.InitializeScene;
+import Source.Interfaces.LoadScene;
+import Source.Others.Cloud;
+import Source.Others.FadeLoadNextScene;
+import Source.Pages.finishCloud.ControllerFinishCloud;
 import javafx.animation.FadeTransition;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -16,18 +18,14 @@ import javafx.scene.layout.Pane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import Source.Others.Cloud;
-import Source.Pages.finishCloud.ControllerFinishCloud;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 
-public class ControllerUploadImage implements Initializable {
+public class ControllerUploadImage extends FadeLoadNextScene implements Initializable, InitializeScene, LoadScene {
 
     @FXML
     private Button exitButton;
@@ -38,22 +36,14 @@ public class ControllerUploadImage implements Initializable {
 
     private boolean isLoadedImg;
     private Image image;
-    private double x, y;
     private Cloud cloud;
 
 //====================================================
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        Image xImage;
-        try {
-            xImage = new Image(new FileInputStream("src/Assets/Images/x.png"));
-            this.exitButton.setGraphic(new ImageView(xImage));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        this.rootPane.setOpacity(0);
-        makeFadeIn();
+        init(this.exitButton, this.rootPane, "src/Assets/Images/x.png");
+        makeFadeIn(this.rootPane);
     }
 
 
@@ -89,7 +79,9 @@ public class ControllerUploadImage implements Initializable {
             this.cloud.setImageName(file.getName());
             this.cloud.setPath(file.toString());
             this.isLoadedImg = true;
-        } catch (Exception e) { }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 
@@ -112,18 +104,7 @@ public class ControllerUploadImage implements Initializable {
     }
 
 
-    private void makeFadeIn() {
-        FadeTransition fadeTransition = new FadeTransition();
-        fadeTransition.setDuration(Duration.millis(800));
-        fadeTransition.setNode(this.rootPane);
-        fadeTransition.setFromValue(0);
-        fadeTransition.setToValue(1);
-        fadeTransition.play();
-    }
-
-
     private void loadNextScene() {
-        Parent newView;
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("../finishCloud/finishCloud.fxml"));
@@ -133,18 +114,8 @@ public class ControllerUploadImage implements Initializable {
             this.cloud.setImage(this.image);
             controllerFinishCloud.set(this.cloud);
 
-            newView = loader.getRoot();
-            Scene newScene = new Scene(newView);
-            Stage stage = (Stage) this.rootPane.getScene().getWindow();
-            newView.setOnMousePressed(event -> {
-                this.x = event.getSceneX();
-                this.y = event.getSceneY();
-            });
-            newView.setOnMouseDragged(event -> {
-                stage.setX(event.getScreenX() - this.x);
-                stage.setY(event.getScreenY() - this.y);
-            });
-            stage.setScene(newScene);
+            this.partialLoadNextScene(loader, this.rootPane);
+
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -1,6 +1,6 @@
 package Source.Others;
 
-import Source.Interfaces.LoadSceneInterface;
+import Source.Interfaces.LoadScene;
 import javafx.animation.FadeTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -30,13 +30,13 @@ public class FadeLoadNextScene {
     }
 
 
-    protected void makeFadeOut(Pane pane, LoadSceneInterface loadSceneInterface, String pathFxml) {
+    protected void makeFadeOut(Pane pane, LoadScene loadScene, String pathFxml) {
         FadeTransition fadeTransition = new FadeTransition();
         fadeTransition.setDuration(Duration.millis(800));
         fadeTransition.setNode(pane);
         fadeTransition.setFromValue(1);
         fadeTransition.setToValue(0);
-        fadeTransition.setOnFinished((ActionEvent event) -> loadSceneInterface.loadNextScene(pathFxml, pane));
+        fadeTransition.setOnFinished((ActionEvent event) -> loadScene.loadNextScene(pathFxml, pane));
         fadeTransition.play();
     }
 
@@ -56,6 +56,25 @@ public class FadeLoadNextScene {
             });
             stage.setScene(newScene);
         } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    protected void partialLoadNextScene(FXMLLoader loader, Pane pane) {
+        try {
+            Parent newView = loader.getRoot();
+            Scene newScene = new Scene(newView);
+            Stage stage = (Stage) pane.getScene().getWindow();
+            newView.setOnMousePressed(event -> {
+                this.x = event.getSceneX();
+                this.y = event.getSceneY();
+            });
+            newView.setOnMouseDragged(event -> {
+                stage.setX(event.getScreenX() - this.x);
+                stage.setY(event.getScreenY() - this.y);
+            });
+            stage.setScene(newScene);
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

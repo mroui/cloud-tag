@@ -2,7 +2,7 @@ package Source.Pages.Home;
 
 import Source.Others.FadeLoadNextScene;
 import Source.Interfaces.InitializeScene;
-import Source.Interfaces.LoadSceneInterface;
+import Source.Interfaces.LoadScene;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -13,7 +13,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 
-public class ControllerHome extends FadeLoadNextScene implements Initializable, LoadSceneInterface, InitializeScene {
+public class ControllerHome extends FadeLoadNextScene implements Initializable, LoadScene, InitializeScene {
 
     @FXML
     private Button exitButton;
