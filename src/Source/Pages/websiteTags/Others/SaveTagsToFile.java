@@ -1,21 +1,21 @@
-package Source.websiteTags;
+package Source.Pages.websiteTags.Others;
 
 
 import java.io.*;
 
 
-class SaveTagsToFile {
+public class SaveTagsToFile {
 
     private String textTags;
 
 //====================================================
 
-    SaveTagsToFile(String textTags) {
+    public SaveTagsToFile(String textTags) {
         this.textTags = textTags;
     }
 
 
-    void save() {
+    public void save() {
         try {
             File file = new File("src/Assets/TextFiles/tags.txt");
             BufferedWriter writer = new BufferedWriter(new FileWriter(file));

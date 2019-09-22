@@ -1,6 +1,8 @@
-package Source.websiteTags;
+package Source.Pages.websiteTags;
 
 
+import Source.Pages.websiteTags.Others.SaveTagsToFile;
+import Source.Pages.websiteTags.Others.Website;
 import javafx.animation.FadeTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -104,7 +106,7 @@ public class ControllerWebsiteTags implements Initializable {
     private void loadNextScene() {
         Parent newView;
         try {
-            newView = (StackPane) FXMLLoader.load(getClass().getResource("../settings/settings.fxml"));
+            newView = (StackPane) FXMLLoader.load(getClass().getResource("../Pages/settings/settings.fxml"));
             Scene newScene = new Scene(newView);
             Stage stage = (Stage) this.rootPane.getScene().getWindow();
             newView.setOnMousePressed(event -> {

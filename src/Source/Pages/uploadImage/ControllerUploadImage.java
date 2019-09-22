@@ -1,4 +1,4 @@
-package Source.uploadImage;
+package Source.Pages.uploadImage;
 
 
 import javafx.animation.FadeTransition;
@@ -16,8 +16,8 @@ import javafx.scene.layout.Pane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import Source.Cloud;
-import Source.finishCloud.ControllerFinishCloud;
+import Source.Others.Cloud;
+import Source.Pages.finishCloud.ControllerFinishCloud;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;

@@ -1,5 +1,6 @@
-package Source;
+package Source.Others;
 
+import Source.Interfaces.LoadSceneInterface;
 import javafx.animation.FadeTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;

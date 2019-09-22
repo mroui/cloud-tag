@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane id="pane" stylesheets="@../../Assets/Styles/style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Source.home.ControllerHome">
+<StackPane id="pane" stylesheets="@../../../Assets/Styles/style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Source.Pages.home.ControllerHome">
    <children>
       <Pane fx:id="homePane" prefHeight="800.0" prefWidth="800.0">
          <children>
@@ -20,9 +20,9 @@
                   <Font name="Cambria" size="24.0" />
                </font>
             </Label>
-            <Button id="butn" defaultButton="true" layoutX="293.0" layoutY="478.0" mnemonicParsing="false" onAction="#startActionButton" prefHeight="48.0" prefWidth="227.0" stylesheets="@../../Assets/Styles/style.css" text="START" />
+            <Button id="butn" defaultButton="true" layoutX="293.0" layoutY="478.0" mnemonicParsing="false" onAction="#startActionButton" prefHeight="48.0" prefWidth="227.0" stylesheets="@../../../Assets/Styles/style.css" text="START" />
          </children>
       </Pane>
-      <Button id="exitbutton" fx:id="exitButton" mnemonicParsing="false" onAction="#ExitActionButton" prefHeight="30.0" prefWidth="30.0" stylesheets="@../../Assets/Styles/style.css" textAlignment="CENTER" translateX="370.0" translateY="-370.0" />
+      <Button id="exitbutton" fx:id="exitButton" mnemonicParsing="false" onAction="#ExitActionButton" prefHeight="30.0" prefWidth="30.0" stylesheets="@../../../Assets/Styles/style.css" textAlignment="CENTER" translateX="370.0" translateY="-370.0" />
    </children>
 </StackPane>

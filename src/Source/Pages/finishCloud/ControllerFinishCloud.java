@@ -1,4 +1,4 @@
-package Source.settings;
+package Source.Pages.finishCloud;
 
 
 import javafx.animation.FadeTransition;
@@ -9,15 +9,15 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.ColorPicker;
-import javafx.scene.control.Slider;
+import javafx.scene.control.ProgressIndicator;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import Source.Cloud;
-import Source.uploadImage.ControllerUploadImage;
+import Source.Others.Cloud;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -25,18 +25,19 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 
-public class ControllerSettings  implements Initializable {
+public class ControllerFinishCloud implements Initializable {
 
     @FXML
     private Button exitButton;
     @FXML
     private Pane rootPane;
     @FXML
-    private Slider tagsCount, minLengthTag, paddingTags, fontSizeFrom, fontSizeTo;
+    private ImageView imageView;
     @FXML
-    private ColorPicker color1, color2, color3, color4, color5;
+    private ProgressIndicator progressIndicator;
 
     private double x, y;
+    private Cloud cloud;
 
 //====================================================
 
@@ -51,11 +52,16 @@ public class ControllerSettings  implements Initializable {
         }
         this.rootPane.setOpacity(0);
         makeFadeIn();
+    }
 
-        this.fontSizeFrom.valueProperty().addListener((observable, oldValue, newValue) -> {
-            this.fontSizeTo.setMin(this.fontSizeFrom.getValue());
-            this.fontSizeTo.setValue(this.fontSizeFrom.getValue());
-        });
+
+    public ControllerFinishCloud() {
+        this.cloud = new Cloud();
+    }
+
+
+    public void set(Cloud cloud) {
+        this.cloud = cloud;
     }
 
 
@@ -67,8 +73,26 @@ public class ControllerSettings  implements Initializable {
 
 
     @FXML
-    private void NextActionButton() {
+    private void RepeatActionButton() {
         makeFadeOut();
+    }
+
+
+    private void createCloud() {
+        Thread creating = new Thread(() -> {
+            progressIndicator.setVisible(true);
+            this.rootPane.setDisable(true);
+
+            this.cloud.create();
+
+            File file = new File("src/Output/" + this.cloud.getImageName());
+            Image image = new Image(file.toURI().toString());
+            this.imageView.setImage(image);
+
+            progressIndicator.setVisible(false);
+            this.rootPane.setDisable(false);
+        });
+        creating.start();
     }
 
 
@@ -89,6 +113,7 @@ public class ControllerSettings  implements Initializable {
         fadeTransition.setNode(this.rootPane);
         fadeTransition.setFromValue(0);
         fadeTransition.setToValue(1);
+        fadeTransition.setOnFinished((ActionEvent event) -> createCloud());
         fadeTransition.play();
     }
 
@@ -96,17 +121,7 @@ public class ControllerSettings  implements Initializable {
     private void loadNextScene() {
         Parent newView;
         try {
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("../uploadImage/uploadImage.fxml"));
-            loader.load();
-
-            ControllerUploadImage controllerUploadImage = loader.getController();
-            Cloud cloud = new Cloud((int)tagsCount.getValue(), (int)minLengthTag.getValue(), (int)paddingTags.getValue(),
-                    (int)fontSizeFrom.getValue(), (int)fontSizeTo.getValue(), color1.getValue(),
-                    color2.getValue(), color3.getValue(), color4.getValue(), color5.getValue(), null);
-            controllerUploadImage.set(cloud);
-
-            newView = loader.getRoot();
+            newView = (StackPane) FXMLLoader.load(getClass().getResource("../home/home.fxml"));
             Scene newScene = new Scene(newView);
             Stage stage = (Stage) this.rootPane.getScene().getWindow();
             newView.setOnMousePressed(event -> {

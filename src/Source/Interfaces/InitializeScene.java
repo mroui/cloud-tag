@@ -1,4 +1,4 @@
-package Source;
+package Source.Interfaces;
 
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;

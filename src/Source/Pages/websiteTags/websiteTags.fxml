@@ -9,14 +9,14 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane id="pane" stylesheets="@../../Assets/Styles/style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Source.websiteTags.ControllerWebsiteTags">
+<StackPane id="pane" stylesheets="@../../../Assets/Styles/style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Source.Pages.websiteTags.ControllerWebsiteTags">
    <children>
       <Pane fx:id="rootPane" prefHeight="800.0" prefWidth="800.0">
          <children>
             <TextField fx:id="urlTextField" layoutX="75.0" layoutY="185.0" onAction="#onEnter"  prefHeight="45.0" prefWidth="650.0" text="https://" />
             <TextArea fx:id="textAreaTags" editable="false" layoutX="75.0" layoutY="369.0" prefHeight="200.0" prefWidth="650.0" promptText="Tagi ze strony..." wrapText="true" />
-            <Button id="butn" fx:id="checkButton" layoutX="268.0" layoutY="268.0" mnemonicParsing="false" onAction="#CheckActionButton" prefHeight="51.0" prefWidth="238.0" stylesheets="@../../Assets/Styles/style.css" text="Sprawdź" textAlignment="CENTER" />
-            <Button id="butn" fx:id="NextButton" layoutX="268.0" layoutY="653.0" mnemonicParsing="false" onAction="#NextActionButton" prefHeight="51.0" prefWidth="238.0" stylesheets="@../../Assets/Styles/style.css" text="Dalej" />
+            <Button id="butn" fx:id="checkButton" layoutX="268.0" layoutY="268.0" mnemonicParsing="false" onAction="#CheckActionButton" prefHeight="51.0" prefWidth="238.0" stylesheets="@../../../Assets/Styles/style.css" text="Sprawdź" textAlignment="CENTER" />
+            <Button id="butn" fx:id="NextButton" layoutX="268.0" layoutY="653.0" mnemonicParsing="false" onAction="#NextActionButton" prefHeight="51.0" prefWidth="238.0" stylesheets="@../../../Assets/Styles/style.css" text="Dalej" />
             <Label layoutX="47.0" layoutY="20.0" text="1.">
                <font>
                   <Font name="Georgia" size="96.0" />
@@ -29,7 +29,7 @@
             </Label>
          </children>
       </Pane>
-      <Button id="exitbutton" fx:id="exitButton" mnemonicParsing="false" onAction="#ExitActionButton" prefHeight="30.0" prefWidth="30.0" stylesheets="@../../Assets/Styles/style.css" textAlignment="CENTER" translateX="370.0" translateY="-370.0" />
+      <Button id="exitbutton" fx:id="exitButton" mnemonicParsing="false" onAction="#ExitActionButton" prefHeight="30.0" prefWidth="30.0" stylesheets="@../../../Assets/Styles/style.css" textAlignment="CENTER" translateX="370.0" translateY="-370.0" />
       <ProgressIndicator fx:id="progressIndicator" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" prefHeight="50.0" prefWidth="50.0" visible="false" />
    </children>
 </StackPane>

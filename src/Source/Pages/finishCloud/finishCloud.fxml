@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane id="pane" stylesheets="@../../Assets/Styles/style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Source.finishCloud.ControllerFinishCloud">
+<StackPane id="pane" stylesheets="@../../../Assets/Styles/style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Source.Pages.finishCloud.ControllerFinishCloud">
    <children>
       <Pane fx:id="rootPane" prefHeight="800.0" prefWidth="800.0">
          <children>
@@ -28,10 +28,10 @@
                </font>
             </Label>
             <ImageView fx:id="imageView" fitHeight="331.0" fitWidth="498.0" layoutX="152.0" layoutY="269.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
-            <Button id="butn" layoutX="281.0" layoutY="643.0" mnemonicParsing="false" onAction="#RepeatActionButton" prefHeight="51.0" prefWidth="238.0" stylesheets="@../../Assets/Styles/style.css" text="Uruchom ponownie" />
+            <Button id="butn" layoutX="281.0" layoutY="643.0" mnemonicParsing="false" onAction="#RepeatActionButton" prefHeight="51.0" prefWidth="238.0" stylesheets="@../../../Assets/Styles/style.css" text="Uruchom ponownie" />
          </children>
       </Pane>
-      <Button id="exitbutton" fx:id="exitButton" mnemonicParsing="false" onAction="#ExitActionButton" prefHeight="30.0" prefWidth="30.0" stylesheets="@../../Assets/Styles/style.css" textAlignment="CENTER" translateX="370.0" translateY="-370.0" />
+      <Button id="exitbutton" fx:id="exitButton" mnemonicParsing="false" onAction="#ExitActionButton" prefHeight="30.0" prefWidth="30.0" stylesheets="@../../../Assets/Styles/style.css" textAlignment="CENTER" translateX="370.0" translateY="-370.0" />
       <ProgressIndicator fx:id="progressIndicator" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" prefHeight="50.0" prefWidth="50.0" visible="false" />
    </children>
 </StackPane>

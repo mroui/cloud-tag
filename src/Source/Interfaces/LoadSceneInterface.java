@@ -1,4 +1,4 @@
-package Source;
+package Source.Interfaces;
 
 import javafx.scene.layout.Pane;
 

@@ -19,7 +19,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        Parent root = FXMLLoader.load(getClass().getResource("home/home.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Pages/home/home.fxml"));
         primaryStage.setScene(new Scene(root, 800, 800));
         primaryStage.initStyle(StageStyle.UNDECORATED);
         primaryStage.getIcons().add(new Image("Assets/Images/icon.png"));

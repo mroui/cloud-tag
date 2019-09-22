@@ -1,4 +1,4 @@
-package Source.websiteTags;
+package Source.Pages.websiteTags.Others;
 
 
 import org.jsoup.Jsoup;
@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 
 
-class Website {
+public class Website {
 
     private String url;
     private Document docUrl;
@@ -16,14 +16,14 @@ class Website {
 
 //====================================================
 
-    Website(String url) {
+    public Website(String url) {
         this.url = url;
         this.docUrl = null;
         this.tags = new ArrayList<>();
     }
 
 
-    String isValid() {
+    public String isValid() {
         String messageReturn = "#BŁĄD: Błędny adres URL.";
         try {
             this.docUrl = Jsoup.connect(this.url).get();

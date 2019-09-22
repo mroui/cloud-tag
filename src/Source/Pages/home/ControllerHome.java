@@ -1,8 +1,8 @@
-package Source.home;
+package Source.Pages.home;
 
-import Source.FadeLoadNextScene;
-import Source.InitializeScene;
-import Source.LoadSceneInterface;
+import Source.Others.FadeLoadNextScene;
+import Source.Interfaces.InitializeScene;
+import Source.Interfaces.LoadSceneInterface;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
