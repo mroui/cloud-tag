@@ -1,6 +1,5 @@
 package Source.Pages.websiteTags.Others;
 
-
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import java.util.ArrayList;
