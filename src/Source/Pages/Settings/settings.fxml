@@ -24,7 +24,7 @@
                </font>
             </Label>
             <Slider fx:id="tagsCount" blockIncrement="0.0" layoutX="74.0" layoutY="203.0" majorTickUnit="50.0" max="600.0" min="100.0" minorTickCount="0" prefHeight="44.0" prefWidth="653.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="100.0" />
-            <Label layoutX="41.0" layoutY="173.0" text="Maksimum amount of words">
+            <Label layoutX="41.0" layoutY="173.0" text="Maximum amount of words">
                <font>
                   <Font name="Georgia" size="18.0" />
                </font>
