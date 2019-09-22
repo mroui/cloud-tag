@@ -22,6 +22,7 @@ import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.net.URL;
+import java.nio.file.Paths;
 import java.util.ResourceBundle;
 
 
@@ -68,8 +69,11 @@ public class ControllerUploadImage extends FadeLoadNextScene implements Initiali
     @FXML
     private void loadImageActionButton() {
         FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Load image...");
         FileChooser.ExtensionFilter extFilterPNG = new FileChooser.ExtensionFilter("PNG files (*.png)", "*.PNG");
         fileChooser.getExtensionFilters().addAll(extFilterPNG);
+        String currentPath = Paths.get("src/Input").toAbsolutePath().normalize().toString();
+        fileChooser.setInitialDirectory(new File(currentPath));
         File file = fileChooser.showOpenDialog(null);
 
         try {
