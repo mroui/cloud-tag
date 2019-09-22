@@ -24,7 +24,7 @@
                </font>
             </Label>
             <Button id="butn" layoutX="268.0" layoutY="570.0" mnemonicParsing="false" onAction="#loadImageActionButton" prefHeight="51.0" prefWidth="238.0" stylesheets="@../../../Assets/Styles/style.css" text="Load image" />
-            <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="200.0" layoutX="230.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true" x="80" y="30">
+            <ImageView fx:id="imageView" fitHeight="250.0" fitWidth="250.0" layoutX="250.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" x="20">
                <image>
                   <Image url="@../../../Assets/Images/blank.png"/>
                </image>
