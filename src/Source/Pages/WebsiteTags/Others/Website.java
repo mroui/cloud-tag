@@ -23,26 +23,22 @@ public class Website {
 
 
     public String isValid() {
-        String messageReturn = "#BŁĄD: Błędny adres URL.";
+        String messageReturn = "#ERROR: Wrong URL.";
         try {
             this.docUrl = Jsoup.connect(this.url).get();
             Document docTags = Jsoup.parse(this.docUrl.body().text());
             String tags = docTags.body().text();
             return getOnlyTags(tags);
         } catch (Exception e) {
-            if (e.getMessage().equals("protocol = https host = null"))
-                messageReturn = "#BŁĄD: Błędny adres URL";
-            if (e.getMessage().contains("Malformed URL:"))
-                messageReturn = "#BŁĄD: Adres URL musi poprzedzać https://";
-            if (e.getMessage().equals(this.url))
-                messageReturn = "#BŁĄD: Adres URL musi poprzedzać https://";
+            if (e.getMessage().contains("Malformed URL:") || e.getMessage().equals(this.url))
+                messageReturn = "#ERROR: The URL must be preceded https://";
             if (e.getMessage().contains("java.security.cert.CertificateException: No subject alternative DNS name matching"))
-                messageReturn = "#BŁĄD: Nie znaleziono alternatywnej nazwy DNS pasującej do " + this.url;
+                messageReturn = "#ERROR: Not found alternative name of DNS matching to " + this.url;
             return messageReturn;
         }
     }
 
-
+    //todo
     private String getOnlyTags(String text) {
         List<Character> polishChars = new ArrayList<>(Arrays.asList( 'ą', 'ę', 'ó', 'ł', 'ż', 'ź', 'ć', 'ś', 'ń',
                                                                      'Ą', 'Ę', 'Ó', 'Ł', 'Ż', 'Ź', 'Ć', 'Ś', 'Ń'));

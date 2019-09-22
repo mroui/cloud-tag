@@ -77,12 +77,10 @@ public class ControllerWebsiteTags extends FadeLoadNextScene implements Initiali
 
     @FXML
     private void NextActionButton() {
-        if (!this.textTags.contains("#BŁĄD: ")) {
-            if (this.textTags.length() != 0) {
-                SaveTagsToFile saveTagsToFile = new SaveTagsToFile(this.textTags);
-                saveTagsToFile.save();
-                makeFadeOut(this.rootPane, this, "../settings/settings.fxml");
-            }
+        if (!this.textTags.contains("#ERROR: ") && this.textTags.length() != 0) {
+            SaveTagsToFile saveTagsToFile = new SaveTagsToFile(this.textTags);
+            saveTagsToFile.save();
+            makeFadeOut(this.rootPane, this, "../settings/settings.fxml");
         }
     }
 }
