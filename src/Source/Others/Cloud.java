@@ -13,10 +13,7 @@ import org.apache.commons.io.IOUtils;
 import java.awt.Dimension;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 
 public class Cloud {
@@ -93,25 +90,21 @@ public class Cloud {
 
 
     private void setHexColors() {
-        java.awt.Color awtColor = new java.awt.Color((float) this.color1.getRed(), (float) this.color1.getGreen(),
-                                                     (float) this.color1.getBlue(),(float) this.color1.getOpacity());
-        this.hexColor1 = java.awt.Color.decode(String.format("#%02X%02X%02X", awtColor.getRed(), awtColor.getGreen(), awtColor.getBlue()));
+        java.awt.Color awtColor;
+        Color [] colors = { color1, color2, color3, color4, color5 };
+        List <java.awt.Color> hexColors = new ArrayList<>();
 
-        awtColor = new java.awt.Color((float) this.color2.getRed(), (float) this.color2.getGreen(),
-                (float) this.color2.getBlue(),(float) this.color2.getOpacity());
-        this.hexColor2 = java.awt.Color.decode(String.format("#%02X%02X%02X", awtColor.getRed(), awtColor.getGreen(), awtColor.getBlue()));
+        for (Color color : colors) {
+            awtColor = new java.awt.Color((float) color.getRed(), (float) color.getGreen(),
+                                          (float) color.getBlue(),(float) color.getOpacity());
+            hexColors.add(java.awt.Color.decode(String.format("#%02X%02X%02X", awtColor.getRed(), awtColor.getGreen(), awtColor.getBlue())));
+        }
 
-        awtColor = new java.awt.Color((float) this.color3.getRed(), (float) this.color3.getGreen(),
-                (float) this.color3.getBlue(),(float) this.color3.getOpacity());
-        this.hexColor3 = java.awt.Color.decode(String.format("#%02X%02X%02X", awtColor.getRed(), awtColor.getGreen(), awtColor.getBlue()));
-
-        awtColor = new java.awt.Color((float) this.color4.getRed(), (float) this.color4.getGreen(),
-                (float) this.color4.getBlue(),(float) this.color4.getOpacity());
-        this.hexColor4 = java.awt.Color.decode(String.format("#%02X%02X%02X", awtColor.getRed(), awtColor.getGreen(), awtColor.getBlue()));
-
-        awtColor = new java.awt.Color((float) this.color5.getRed(), (float) this.color5.getGreen(),
-                (float) this.color5.getBlue(),(float) this.color5.getOpacity());
-        this.hexColor5 = java.awt.Color.decode(String.format("#%02X%02X%02X", awtColor.getRed(), awtColor.getGreen(), awtColor.getBlue()));
+        this.hexColor1 = hexColors.get(0);
+        this.hexColor2 = hexColors.get(1);
+        this.hexColor3 = hexColors.get(2);
+        this.hexColor4 = hexColors.get(3);
+        this.hexColor5 = hexColors.get(4);
     }
 
 
