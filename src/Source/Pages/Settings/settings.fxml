@@ -12,43 +12,43 @@
    <children>
       <Pane fx:id="rootPane" prefHeight="800.0" prefWidth="800.0">
          <children>
-            <Button id="butn" layoutX="268.0" layoutY="653.0" mnemonicParsing="false" onAction="#NextActionButton" prefHeight="51.0" prefWidth="238.0" stylesheets="@../../../Assets/Styles/style.css" text="Dalej" />
+            <Button id="butn" layoutX="268.0" layoutY="653.0" mnemonicParsing="false" onAction="#NextActionButton" prefHeight="51.0" prefWidth="238.0" stylesheets="@../../../Assets/Styles/style.css" text="Next" />
             <Label layoutX="47.0" layoutY="20.0" text="2.">
                <font>
                   <Font name="Georgia" size="96.0" />
                </font>
             </Label>
-            <Label layoutX="142.0" layoutY="92.0" text="Dobierz ustawienia">
+            <Label layoutX="142.0" layoutY="92.0" text="Settings">
                <font>
                   <Font name="Georgia" size="64.0" />
                </font>
             </Label>
             <Slider fx:id="tagsCount" blockIncrement="0.0" layoutX="74.0" layoutY="203.0" majorTickUnit="50.0" max="600.0" min="100.0" minorTickCount="0" prefHeight="44.0" prefWidth="653.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="100.0" />
-            <Label layoutX="41.0" layoutY="173.0" text="Do ilu słów">
+            <Label layoutX="41.0" layoutY="173.0" text="Maksimum amount of words">
                <font>
                   <Font name="Georgia" size="18.0" />
                </font>
             </Label>
             <Slider fx:id="minLengthTag" blockIncrement="0.0" layoutX="74.0" layoutY="283.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="44.0" prefWidth="653.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" />
-            <Label layoutX="41.0" layoutY="254.0" text="Minimalna długość słowa">
+            <Label layoutX="41.0" layoutY="254.0" text="Minimum word length">
                <font>
                   <Font name="Georgia" size="18.0" />
                </font>
             </Label>
             <Slider fx:id="paddingTags" blockIncrement="0.0" layoutX="74.0" layoutY="365.0" majorTickUnit="1.0" max="5.0" min="1.0" minorTickCount="0" prefHeight="44.0" prefWidth="653.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" />
-            <Label layoutX="37.0" layoutY="337.0" text="Odległość między słowami">
+            <Label layoutX="37.0" layoutY="337.0" text="Space between words">
                <font>
                   <Font name="Georgia" size="18.0" />
                </font>
             </Label>
             <Slider fx:id="fontSizeFrom" blockIncrement="0.0" layoutX="74.0" layoutY="448.0" majorTickUnit="2.0" max="50.0" min="14.0" minorTickCount="0" prefHeight="44.0" prefWidth="653.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="14.0" />
             <Slider fx:id="fontSizeTo" blockIncrement="0.0" layoutX="74.0" layoutY="499.0" majorTickUnit="2.0" max="50.0" min="14.0" minorTickCount="0" prefHeight="44.0" prefWidth="653.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="14.0" />
-            <Label layoutX="41.0" layoutY="419.0" text="Wielkość czcionki od i do">
+            <Label layoutX="41.0" layoutY="419.0" text="Font size from-to">
                <font>
                   <Font name="Georgia" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="47.0" layoutY="553.0" text="Kolory słów">
+            <Label layoutX="47.0" layoutY="553.0" text="Word colors">
                <font>
                   <Font name="Georgia" size="18.0" />
                </font>
