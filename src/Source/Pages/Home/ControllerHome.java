@@ -1,4 +1,4 @@
-package Source.Pages.home;
+package Source.Pages.Home;
 
 import Source.Others.FadeLoadNextScene;
 import Source.Interfaces.InitializeScene;

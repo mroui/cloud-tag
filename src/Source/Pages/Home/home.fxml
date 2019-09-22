@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane id="pane" stylesheets="@../../../Assets/Styles/style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Source.Pages.home.ControllerHome">
+<StackPane id="pane" stylesheets="@../../../Assets/Styles/style.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Source.Pages.Home.ControllerHome">
    <children>
       <Pane fx:id="homePane" prefHeight="800.0" prefWidth="800.0">
          <children>

@@ -121,7 +121,7 @@ public class ControllerFinishCloud implements Initializable {
     private void loadNextScene() {
         Parent newView;
         try {
-            newView = (StackPane) FXMLLoader.load(getClass().getResource("../home/home.fxml"));
+            newView = (StackPane) FXMLLoader.load(getClass().getResource("../Home/home.fxml"));
             Scene newScene = new Scene(newView);
             Stage stage = (Stage) this.rootPane.getScene().getWindow();
             newView.setOnMousePressed(event -> {
