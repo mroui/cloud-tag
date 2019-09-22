@@ -1,10 +1,10 @@
-package Source.Pages.websiteTags;
+package Source.Pages.WebsiteTags;
 
 import Source.Interfaces.InitializeScene;
 import Source.Interfaces.LoadScene;
 import Source.Others.FadeLoadNextScene;
-import Source.Pages.websiteTags.Others.SaveTagsToFile;
-import Source.Pages.websiteTags.Others.Website;
+import Source.Pages.WebsiteTags.Others.SaveTagsToFile;
+import Source.Pages.WebsiteTags.Others.Website;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

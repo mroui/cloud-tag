@@ -1,4 +1,4 @@
-package Source.Pages.websiteTags.Others;
+package Source.Pages.WebsiteTags.Others;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

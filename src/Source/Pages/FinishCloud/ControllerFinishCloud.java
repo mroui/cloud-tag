@@ -1,4 +1,4 @@
-package Source.Pages.finishCloud;
+package Source.Pages.FinishCloud;
 
 import Source.Interfaces.InitializeScene;
 import Source.Interfaces.LoadScene;

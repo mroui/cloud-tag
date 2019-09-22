@@ -1,4 +1,4 @@
-package Source.Pages.settings;
+package Source.Pages.Settings;
 
 import Source.Interfaces.InitializeScene;
 import Source.Interfaces.LoadScene;
@@ -15,7 +15,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import Source.Others.Cloud;
-import Source.Pages.uploadImage.ControllerUploadImage;
+import Source.Pages.UploadImage.ControllerUploadImage;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;

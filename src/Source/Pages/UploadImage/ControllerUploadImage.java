@@ -1,10 +1,10 @@
-package Source.Pages.uploadImage;
+package Source.Pages.UploadImage;
 
 import Source.Interfaces.InitializeScene;
 import Source.Interfaces.LoadScene;
 import Source.Others.Cloud;
 import Source.Others.FadeLoadNextScene;
-import Source.Pages.finishCloud.ControllerFinishCloud;
+import Source.Pages.FinishCloud.ControllerFinishCloud;
 import javafx.animation.FadeTransition;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
