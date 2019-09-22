@@ -79,9 +79,7 @@ public class ControllerUploadImage extends FadeLoadNextScene implements Initiali
             this.cloud.setImageName(file.getName());
             this.cloud.setPath(file.toString());
             this.isLoadedImg = true;
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        } catch (Exception e) {}
     }
 
 
