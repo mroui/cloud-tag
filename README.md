@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./src/Assets/Images/icon.png" alt="Cloud Tag logo icon"/>
+  <img src="./src/Assets/Images/icon.png" alt="Cloud Tag logo icon" width="100"/>
 </p>
 <h1 align="center">
 	Cloud Tag
