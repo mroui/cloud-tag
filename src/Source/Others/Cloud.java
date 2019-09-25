@@ -110,7 +110,7 @@ public class Cloud {
 
     private static Set<String> loadStopWords() {
         try {
-            final List<String> lines = IOUtils.readLines(getInputStream("src/Assets/stop_words.txt"));
+            final List<String> lines = IOUtils.readLines(getInputStream("Assets/TextFiles/stop_words.txt"));
             return new HashSet<>(lines);
         } catch (Exception e) {
             e.printStackTrace();
