@@ -43,9 +43,9 @@ The main purpose is **creating a cloud tag**.
 * Java 1.8
 * JavaFX
 * IntelliJ IDEA 2019.2.2
-* Kumo cli 1.23 [here](https://github.com/kennycason/kumo)
-* JSoup 1.12.1 [here] (https://jsoup.org/)
-* SLF4J Api&Simple jar 1.6.1 [here] (https://mvnrepository.com/artifact/org.slf4j/slf4j-api/1.6.1) and [here] (https://mvnrepository.com/artifact/org.slf4j/slf4j-simple/1.6.1)
+* [Kumo cli 1.23](https://github.com/kennycason/kumo)
+* [JSoup 1.12.1](https://jsoup.org/)
+* SLF4J Api&Simple jar 1.6.1 [here](https://mvnrepository.com/artifact/org.slf4j/slf4j-api/1.6.1) and [here](https://mvnrepository.com/artifact/org.slf4j/slf4j-simple/1.6.1)
 
 ## Screenshots
 > todo
