@@ -45,10 +45,14 @@ The main purpose is **creating a cloud tag**.
 * IntelliJ IDEA 2019.2.2
 * [Kumo cli 1.23](https://github.com/kennycason/kumo)
 * [JSoup 1.12.1](https://jsoup.org/)
-* SLF4J Api&Simple jar 1.6.1 [here](https://mvnrepository.com/artifact/org.slf4j/slf4j-api/1.6.1) and [here](https://mvnrepository.com/artifact/org.slf4j/slf4j-simple/1.6.1)
+* SLF4J Api&Simple jar 1.6.1, [here](https://mvnrepository.com/artifact/org.slf4j/slf4j-api/1.6.1) and [here](https://mvnrepository.com/artifact/org.slf4j/slf4j-simple/1.6.1)
 
 ## Screenshots
-> todo
+![Home page Cloud Tag](https://i.ibb.co/2k1Q3Cx/screen1cloudtag.png "Home page Cloud Tag")
+![Enter website page Cloud Tag](https://i.ibb.co/j6G3dKC/screen2cloudtag.png "Enter website page Cloud Tag")
+![Settings page Cloud Tag](https://i.ibb.co/R306cnr/screen3cloudtag.png "Setting page Cloud Tag")
+![Load image page Cloud Tag](https://i.ibb.co/30Zz8K8/screen4cloudtag.png "Load image page Cloud Tag")
+![Result page Cloud Tag](https://i.ibb.co/7trt206/screen5cloudtag.png "Result page page Cloud Tag")
 
 ## Setup
 > todo
