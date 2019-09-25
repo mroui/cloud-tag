@@ -28,3 +28,29 @@ The main advantage is a **modern design** of application with **frameless style*
 It is an **desktop, window application** created in **Java** using **JavaFX** with **JSoup**, **Kumo** and **SLF4J** libraries. Application was tested on *Windows 10 64bit*.
 
 *Project was made for passing the subject in college, but it was so interesting, that I willingly developed it with additional properties.*
+
+## Features
+The main purpose is **creating a cloud tag**. 
+* Modern, minimalistic design with frameless style
+* Retrieve words from any website URL
+* Customize settings like: words amount and length, space between them, font size and colors.
+* Five-colored tags on clouds
+* Set your own base image
+* Ignore unwanted words
+* Save cloud result
+
+## Technologies
+* Java 1.8
+* JavaFX
+* IntelliJ IDEA 2019.2.2
+* Kumo cli 1.23 [here](https://github.com/kennycason/kumo)
+* JSoup 1.12.1 [here] (https://jsoup.org/)
+* SLF4J Api&Simple jar 1.6.1 [here] (https://mvnrepository.com/artifact/org.slf4j/slf4j-api/1.6.1) and [here] (https://mvnrepository.com/artifact/org.slf4j/slf4j-simple/1.6.1)
+
+## Screenshots
+> todo
+
+## Setup
+> todo
+## License
+This project is licensed under the terms of the MIT license.
