@@ -48,11 +48,18 @@ The main purpose is **creating a cloud tag**.
 * SLF4J Api&Simple jar 1.6.1, [here](https://mvnrepository.com/artifact/org.slf4j/slf4j-api/1.6.1) and [here](https://mvnrepository.com/artifact/org.slf4j/slf4j-simple/1.6.1)
 
 ## Screenshots
-![Cloud Tag page1,2](https://i.ibb.co/CPXHhkd/screen1cloudtag.png "Cloud tag page1-2")
-![Cloud Tag page3,4](https://i.ibb.co/rkMt4x1/screen2cloudtag.png "Cloud tag page3-4")
-![Cloud Tag page5](https://i.ibb.co/GWCByw6/screen3cloudtag.png "Cloud tag page5")
+<p align="center">
+  <img src="https://i.ibb.co/CPXHhkd/screen1cloudtag.png" alt="Cloud tag page1-2"/>
+</p>
+<p align="center">
+  <img src="https://i.ibb.co/rkMt4x1/screen2cloudtag.png" alt="Cloud tag page3-4"/>
+</p>
+<p align="center">
+  <img src="https://i.ibb.co/GWCByw6/screen3cloudtag.png" alt="Cloud tag page5"/>
+</p>
 
 ## Setup
 > todo
+
 ## License
 This project is licensed under the terms of the MIT license.
