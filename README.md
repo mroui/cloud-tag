@@ -48,11 +48,9 @@ The main purpose is **creating a cloud tag**.
 * SLF4J Api&Simple jar 1.6.1, [here](https://mvnrepository.com/artifact/org.slf4j/slf4j-api/1.6.1) and [here](https://mvnrepository.com/artifact/org.slf4j/slf4j-simple/1.6.1)
 
 ## Screenshots
-![Home page Cloud Tag](https://i.ibb.co/2k1Q3Cx/screen1cloudtag.png "Home page Cloud Tag")
-![Enter website page Cloud Tag](https://i.ibb.co/j6G3dKC/screen2cloudtag.png "Enter website page Cloud Tag")
-![Settings page Cloud Tag](https://i.ibb.co/R306cnr/screen3cloudtag.png "Setting page Cloud Tag")
-![Load image page Cloud Tag](https://i.ibb.co/30Zz8K8/screen4cloudtag.png "Load image page Cloud Tag")
-![Result page Cloud Tag](https://i.ibb.co/7trt206/screen5cloudtag.png "Result page page Cloud Tag")
+![Cloud Tag page1,2](https://i.ibb.co/CPXHhkd/screen1cloudtag.png "Cloud tag page1-2")
+![Cloud Tag page3,4](https://i.ibb.co/rkMt4x1/screen2cloudtag.png "Cloud tag page3-4")
+![Cloud Tag page5](https://i.ibb.co/GWCByw6/screen3cloudtag.png "Cloud tag page5")
 
 ## Setup
 > todo
