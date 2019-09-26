@@ -43,7 +43,7 @@ The main purpose is **creating a cloud tag**.
 * Java 1.8
 * JavaFX
 * IntelliJ IDEA 2019.2.2
-* [Kumo cli 1.23](https://github.com/kennycason/kumo)
+* [Kumo 1.23](https://github.com/kennycason/kumo)
 * [JSoup 1.12.1](https://jsoup.org/)
 * SLF4J Api&Simple jar 1.6.1, [here](https://mvnrepository.com/artifact/org.slf4j/slf4j-api/1.6.1) and [here](https://mvnrepository.com/artifact/org.slf4j/slf4j-simple/1.6.1)
 
@@ -59,7 +59,28 @@ The main purpose is **creating a cloud tag**.
 </p>
 
 ## Setup
-> todo
+* [Install JDK SE 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+* [Install Intellij IDEA](https://www.jetbrains.com/idea/download/)
+* [Download Kumo 1.23 or higher jar](https://mvnrepository.com/artifact/com.kennycason/kumo)
+* [Download JSoup 1.12.1 or higher jar] (https://jsoup.org/download)
+* [Download SLF4J Api 1.6.1 or higher jar] (https://mvnrepository.com/artifact/org.slf4j/slf4j-api)
+* [Download SLF4J Simple 1.6.1 or higher jar] (https://mvnrepository.com/artifact/org.slf4j/slf4j-simple)
+* Clone repository
+```
+#clone repository cloud-tag
+git clone https://github.com/mroui/cloud-tag.git
+```
+* Enter the main folder `cloud-tag`
+* Create new folder `lib`
+* Copy all jars into `lib` folder
+* Import project by IntelliJ IDEA
+* Add jars in IntelliJ IDEA:
+    ..* Click `File` from the toolbar
+    ..* Project Structure `(CTRL + SHIFT + ALT + S on Windows/Linux)`
+    ..* Select Modules at the left panel
+    ..* Dependencies tab
+    ..* `+` -> JARs or directories
+* Run an application
 
 ## License
 This project is licensed under the terms of the MIT license.
