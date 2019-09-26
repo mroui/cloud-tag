@@ -76,7 +76,7 @@ git clone https://github.com/mroui/cloud-tag.git
 * Import project by IntelliJ IDEA
 * Add jars in IntelliJ IDEA:
     * Click `File` from the toolbar
-    * Project Structure `(CTRL + SHIFT + ALT + S on Windows/Linux)`
+    * Project Structure (<kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>S</kbd> on Windows/Linux)
     * Select Modules at the left panel
     * Dependencies tab
     * `+` -> JARs or directories
