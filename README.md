@@ -4,6 +4,7 @@
 <h1 align="center">
 	Cloud Tag
 </h1>
+
 > This is an desktop application that allows to create a cloud picture of words found on a chosen website.
 
 ## Table of contents
@@ -27,7 +28,7 @@ The main advantage is a **modern design** of application with **frameless style*
 </br></br>
 It is an **desktop, window application** created in **Java** using **JavaFX** with **JSoup**, **Kumo** and **SLF4J** libraries. Application was tested on *Windows 10 64bit*.
 
-*Project was made for passing the subject in college, but it was so interesting, that I willingly developed it with additional properties.*
+*Project was made for passing the subject in college, but it was so interesting, that I willingly developed it with additional properties & fixed some bugs.*
 
 ## Features
 The main purpose is **creating a cloud tag**. 
