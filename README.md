@@ -50,13 +50,13 @@ The main purpose is **creating a cloud tag**.
 
 ## Screenshots
 <p align="center">
-  <img src="https://i.ibb.co/CPXHhkd/screen1cloudtag.png" alt="Cloud tag page1-2"/>
+  <img src="./src/Assets/Screenshots/cloudtag-screen-01.png" alt="Cloud tag page0-1"/>
 </p>
 <p align="center">
-  <img src="https://i.ibb.co/rkMt4x1/screen2cloudtag.png" alt="Cloud tag page3-4"/>
+  <img src="./src/Assets/Screenshots/cloudtag-screen-23.png" alt="Cloud tag page2-3"/>
 </p>
 <p align="center">
-  <img src="https://i.ibb.co/GWCByw6/screen3cloudtag.png" alt="Cloud tag page5"/>
+  <img src="./src/Assets/Screenshots/cloudtag-screen-4.png" alt="Cloud tag page4"/>
 </p>
 
 ## Setup
